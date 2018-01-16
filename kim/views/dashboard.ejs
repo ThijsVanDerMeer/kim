@@ -1,0 +1,298 @@
+<div id="dashboard-page">
+
+	<div class="header">
+		<div class="max-width-container">
+			<div class="logo">
+			</div>
+			<div class="logout">
+			</div>
+			<div id="username">
+				<span></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="dashboard-background"></div>
+
+	<div class="overview">
+
+		<div class="max-width-container">
+
+			<div class="current-alerts">
+
+				<div class="title-container clearfix">
+					<div class="title">
+						<h1>Actuele meldingen</h1><span>(4)</span>
+					</div>
+					<div class="datepicker">
+						<div id="calendar-trigger">
+							<span class="icon1"></span>
+							<span class="date"><%= today %></span>
+							<span class="icon2"></span>
+						</div>
+						<div id="calendar"></div>
+					</div>
+				</div>
+
+				<div class="table">		
+
+					<div class="add-wrapper">
+						<div id="new-notification">
+
+						</div>
+					</div>		
+
+					<div class="row clearfix">
+						<div class="col-1">
+							P
+						</div>
+						<div class="col-2">
+							Gemeld op
+						</div>
+						<div class="col-3">
+							Naam
+						</div>
+						<div class="col-4">
+							Bedrijf
+						</div>
+						<div class="col-5">
+							Telnr
+						</div>
+						<div class="col-6">
+							Korte beschrijving
+						</div>
+						<div class="col-7">
+							Terugbellen voor
+						</div>
+						<div class="col-8">
+							Aangenomen door
+						</div>
+						<div class="col-9">
+							Melding voor
+						</div>
+						<div class="col-10">
+							Afgehandeld
+						</div>
+					</div>
+
+					<div class="table-data">
+
+
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<div class="old-alerts">
+
+				<div class="title-container clearfix">
+					<div class="title">
+						<h1>Afgeronde meldingen</h1><span>(2)</span>
+					</div>
+					<div class="datepicker">					
+					</div>
+				</div>
+
+				<div class="table">						
+
+					<div class="table-data">
+
+						
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		
+	</div>
+
+</div>
+
+<div class="dropdown" group="" row="">
+
+	<div class="title">
+		Afgehandeld
+	</div>
+
+	<div class="list">
+		<ul>
+
+		</ul>
+	</div>
+
+	<div class="actions">
+		<span class="cancel">Annuleren</span>
+		<span class="confirm">OK</span>
+	</div>
+
+</div>
+
+<div id="blackbox">
+</div>
+<div id="lightbox-wrapper">
+	<div class="lightbox">
+		<div class="lightbox-title">
+			<span class="text">Melding toevoegen</span>
+			<span class="close"></span>
+		</div>
+		<div class="lightbox-form">
+
+			<div class="row row-1 clearfix">
+
+				<div class="input-wrapper">
+					<span class="label">Bedrijfsnaam</span>						
+					<input name="company" type="text">
+					<div class="line"></div>
+
+					<div id="auto-complete-list">
+						<ul>
+
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="input-wrapper">
+					<span class="label">Voornaam</span>						
+					<input name="first-name" type="text">
+					<div class="line"></div>
+				</div>
+
+				<div class="input-wrapper">
+					<span class="label">Achternaam</span>						
+					<input name="last-name" type="text">
+					<div class="line"></div>
+				</div>
+
+			</div>
+
+			<div class="row row-2 clearfix">
+
+				<div class="input-wrapper">
+					<span class="label">Telefoonnummer</span>						
+					<input name="telephone" type="text">
+					<div class="line"></div>
+				</div>
+
+				<div class="input-wrapper">
+					<span class="label">Korte omschrijving</span>						
+					<input name="short-description" type="text">
+					<div class="line"></div>
+				</div>				
+			</div>
+
+			<div class="row row-3 clearfix">
+
+				<div class="input-wrapper">
+					<span class="label">Lange omschrijving</span>						
+					<input name="long-description" type="text">
+					<div class="line"></div>
+				</div>
+			
+			</div>
+			
+			<div class="row row-4 clearfix">
+
+				<div class="input-wrapper">
+					<span class="label">Melding aangenomen door</span>						
+					<input name="created-by" type="text" disabled="disabled">
+					<div class="line"></div>
+				</div>
+
+				<div class="input-wrapper">
+					<span class="label">Melding voor</span>						
+					<input name="assign-to" type="text" disabled="disabled">
+					<div class="line"></div>
+				</div>
+
+				<div class="input-wrapper">
+					<span class="label">Terugbellen voor</span>						
+					<input name="deadline-date" type="text">
+					<div class="line"></div>
+
+					<div id="calendar-deadline"></div>
+				</div>
+
+				<div class="input-wrapper">
+					<span class="label">Tijd</span>						
+					<input name="deadline-time" type="text">
+					<div class="line"></div>
+
+					<div id="time-dropdown">
+						<ul>
+							<li>08:00</li>
+							<li>08:30</li>
+							<li>09:00</li>
+							<li>09:30</li>
+							<li>10:00</li>
+							<li>10:30</li>
+							<li>11:00</li>
+							<li>11:30</li>
+							<li>12:00</li>
+							<li>12:30</li>
+							<li>13:00</li>
+							<li>13:30</li>
+							<li>14:00</li>
+							<li>14:30</li>
+							<li>15:00</li>
+							<li>15:30</li>
+							<li>16:00</li>
+							<li>16:30</li>
+							<li>17:00</li>
+							<li>17:30</li>
+							<li>18:00</li>
+						</ul>
+					</div>
+				</div>
+			
+			</div>
+
+			<div class="row row-5 clearfix">
+
+				<div class="input-wrapper">
+					<span class="label">Prioriteit</span>						
+					<input name="priority" type="text" disabled="disabled">
+					<div class="line"></div>
+				</div>	
+
+				<div class="priority-list">
+
+					<ul>
+						<li data-prio="3" class="selected">Normaal</li>
+						<li data-prio="2">Belangrijk</li>
+						<li data-prio="1">Spoed</li>					
+					</ul>
+
+				</div>			
+			
+			</div>
+
+			<div id="new-contact-wrapper">
+
+				<span class="checkbox">
+
+				</span>
+
+				<span class="label">
+					Nieuw contact toevoegen
+				</span>
+
+			</div>
+
+			<div id="form-actions">
+				<span id="new-cancel">Annuleren</span>
+				<span id="new-confirm">Plaats melding</span>
+			</div>
+
+			<div id="form-error">
+				<span>Vul een bedrijfsnaam in</span>
+			</div>
+
+		</div>
+	</div>
+</div>

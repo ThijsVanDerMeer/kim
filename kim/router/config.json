@@ -1,0 +1,25 @@
+{
+	"pages": [
+	{
+		"hash": "dashboard",
+		"view": "dashboard",
+		"properties": {
+			"default": true,
+			"components": ["dashboard", "popup"]
+		}
+	},
+	 {
+		"hash": "users",
+		"view": "users",
+		"properties": {
+			"components": []
+		}
+	}, {
+		"hash": "login",
+		"view": "login",
+		"properties": {
+			"isAuthPage": true,
+			"components": ["login"]
+		}
+	}]
+}
