@@ -3,10 +3,10 @@
  */
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'root',
-    password : '',
-    database : 'kim',
+    host     : 'projects.wdzone.nl',
+    user     : 't.vandermeer',
+    password : 'scooter',
+    database : 'kim_nodejs',
     dateStrings: true
 });
 connection.connect();

@@ -2,7 +2,7 @@
 var trackConnection = function() {
 
 	$.ajax({ 
-		url: 'http://192.168.59.50:3000',
+		url: 'http://localhost:3000',
 		type: 'get',
 		success: function() {
 			setTimeout(trackConnection, 60000);	 
